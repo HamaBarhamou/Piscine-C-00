@@ -1,25 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_reverse_alphabet.c                        :+:      :+:    :+:   */
+/*   ft_is_negative.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bissaka- <bissaka-@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/08 12:38:55 by bissaka-          #+#    #+#             */
-/*   Updated: 2021/09/08 17:46:38 by bissaka-         ###   ########.fr       */
+/*   Created: 2021/09/08 21:14:44 by bissaka-          #+#    #+#             */
+/*   Updated: 2021/09/09 09:05:41 by bissaka-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include<unistd.h>
 
-void	ft_print_reverse_alphabet(void)
+void	ft_is_negative(int n)
 {
 	char	car;
 
-	car = 'z';
-	while (car >= 'a')
+	if (n >= 0)
 	{
+		car = 'P';
 		write(1, &car, 1);
-		car -= 1;
+	}
+	else
+	{
+		car = 'N';
+		write(1, &car, 1);
 	}
 }
+
+//int main(void)
+//{
+//    ft_is_negative(-5);
+//}

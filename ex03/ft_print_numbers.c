@@ -1,25 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_reverse_alphabet.c                        :+:      :+:    :+:   */
+/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bissaka- <bissaka-@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/08 12:38:55 by bissaka-          #+#    #+#             */
-/*   Updated: 2021/09/08 17:46:38 by bissaka-         ###   ########.fr       */
+/*   Created: 2021/09/08 13:29:59 by bissaka-          #+#    #+#             */
+/*   Updated: 2021/09/08 21:11:53 by bissaka-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include<unistd.h>
 
-void	ft_print_reverse_alphabet(void)
+void	ft_print_numbers(void)
 {
-	char	car;
+	char	i;
 
-	car = 'z';
-	while (car >= 'a')
+	i = '0';
+	while (i <= '9')
 	{
-		write(1, &car, 1);
-		car -= 1;
+		write(1, &i, 1);
+		i++;
 	}
 }
+
+//int	main(void)
+//{
+//	ft_print_numbers();
+//}
