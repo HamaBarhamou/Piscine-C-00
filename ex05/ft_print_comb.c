@@ -6,7 +6,7 @@
 /*   By: bissaka- <bissaka-@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/09 20:42:53 by bissaka-          #+#    #+#             */
-/*   Updated: 2021/09/12 18:25:59 by bissaka-         ###   ########.fr       */
+/*   Updated: 2021/09/12 20:48:15 by bissaka-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,8 +47,20 @@ void	affiche(int x, int y, int z)
 	tab[4] = ' ';
 	if ((x == 7) && (y == 8) && (z == 9))
 		tab[3] = '\0';
-	if	(tab[0] != tab[1] && tab[1] != tab[2] && tab[2] != tab[0])
+	if (tab[0] != tab[1] && tab[1] != tab[2] && tab[2] != tab[0])
 		write(1, &tab, 5);
+}
+
+void	boucle_sur_les_unites(int *x, int *y, int *z, int *pos3)
+{
+	while (*z <= 9)
+	{
+		affiche(*x, *y, *z);
+		*z += 1;
+	}
+	*pos3 += 1;
+	*z = *pos3;
+	*y += 1;
 }
 
 void	ft_print_comb(void)
@@ -69,23 +81,14 @@ void	ft_print_comb(void)
 	while (x <= 7)
 	{
 		while (y <= 8)
-		{
-			while (z <= 9)
-            {
-            	affiche(x, y, z);
-                z += 1;
-            }
-			pos3++;
-			z = pos3;
-			y++;
-		}
+			boucle_sur_les_unites(&x, &y, &z, &pos3);
 		pos3 = init3;
 		pos3++;
 		init3++;
-        z = pos3;
-        pos2++;
-        y = pos2;
-		x++; 
+		z = pos3;
+		pos2++;
+		y = pos2;
+		x++;
 	}
 }
 
