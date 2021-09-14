@@ -6,7 +6,7 @@
 /*   By: bissaka- <bissaka-@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/09 20:42:53 by bissaka-          #+#    #+#             */
-/*   Updated: 2021/09/12 21:35:10 by bissaka-         ###   ########.fr       */
+/*   Updated: 2021/09/13 10:47:39 by bissaka-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,37 +14,13 @@
 
 int	g_init3;
 
-char	conversion(int x)
-{
-	if (x == 0)
-		return ('0');
-	else if (x == 1)
-		return ('1');
-	else if (x == 2)
-		return ('2');
-	else if (x == 3)
-		return ('3');
-	else if (x == 4)
-		return ('4');
-	else if (x == 5)
-		return ('5');
-	else if (x == 6)
-		return ('6');
-	else if (x == 7)
-		return ('7');
-	else if (x == 8)
-		return ('8');
-	else
-		return ('9');
-}
-
 void	affiche(int x, int y, int z)
 {
 	char	tab[5];
 
-	tab[0] = conversion(x);
-	tab[1] = conversion(y);
-	tab[2] = conversion(z);
+	tab[0] = x + '0';
+	tab[1] = y + '0';
+	tab[2] = z + '0';
 	tab[3] = ',';
 	tab[4] = ' ';
 	if ((x == 7) && (y == 8) && (z == 9))
