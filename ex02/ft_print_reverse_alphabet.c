@@ -6,7 +6,7 @@
 /*   By: bissaka- <bissaka-@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/08 12:38:55 by bissaka-          #+#    #+#             */
-/*   Updated: 2021/09/08 17:46:38 by bissaka-         ###   ########.fr       */
+/*   Updated: 2021/09/18 14:58:27 by bissaka-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,8 @@ void	ft_print_reverse_alphabet(void)
 		car -= 1;
 	}
 }
+
+/*int main(void)
+{
+    ft_print_reverse_alphabet();
+}*/

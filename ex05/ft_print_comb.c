@@ -6,7 +6,7 @@
 /*   By: bissaka- <bissaka-@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/09 20:42:53 by bissaka-          #+#    #+#             */
-/*   Updated: 2021/09/13 10:47:39 by bissaka-         ###   ########.fr       */
+/*   Updated: 2021/09/18 15:04:52 by bissaka-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,8 +69,8 @@ void	ft_print_comb(void)
 	}
 }
 
-int	main(void)
+/*int	main(void)
 {
 	ft_print_comb ();
 	return (0);
-}
+}*/
